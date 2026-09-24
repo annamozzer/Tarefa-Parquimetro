@@ -1,0 +1,133 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* dimensões */
+    width: 100%;
+    min-height: 100vh;
+
+    /* estilização */
+    background: linear-gradient(135deg, #0C7DBF, #56A9D6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+
+    /* tipografia */
+    color: #191511;
+    text-align: center;
+}
+
+.container {
+    /* dimensões */
+    width: min(92vw, 520px);
+
+    /* estilização */
+    background-color: #EAF5FF;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 16px;
+    padding: 32px 24px;
+    gap: 14px;
+}
+
+h1 {
+    margin-bottom: 4px;
+}
+
+h2 {
+    margin-bottom: 12px;
+}
+
+p {
+    line-height: 1.5;
+}
+
+.tabela {
+    /* dimensões */
+    width: 100%;
+
+    /* estilização */
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+    border: 1px solid rgba(185, 215, 234, 0.8);
+    border-radius: 12px;
+    padding: 18px 16px;
+}
+
+ul {
+    /* estilização */
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin: 0;
+}
+
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+label {
+    /* tipografia */
+    font-weight: 600;
+    margin-top: 8px;
+}
+
+input {
+    /* dimensões */
+    width: 100%;
+    max-width: 180px;
+
+    /* estilização */
+    padding: 5px 6px;
+    border: 1px solid #B9D7EA;
+    border-radius: 8px;
+    outline: none;
+
+    /* tipografia */
+    text-align: center;
+}
+
+input:focus {
+    border-color: #0C7DBF;
+}
+
+button {
+    /* dimensões */
+    width: 100%;
+    max-width: 180px;
+    height: 30px;
+
+    /* estilização */
+    background-color: #0C7DBF;
+    padding: 4px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+
+    /* tipografia */
+    font-weight: bold;
+    color: #ffffff;
+}
+
+button:hover {
+    background-color: #0A5F9A;
+}
+
+#resultado {
+    /* dimensões */
+    min-height: 48px;
+
+    /* estilização */
+    margin-top: 8px;
+
+    /* tipografia */
+    font-weight: 600;
+    color: #0D3A52;
+}
