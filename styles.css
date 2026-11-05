@@ -1,5 +1,4 @@
 * {
-    font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -7,7 +6,6 @@
 
 body {
     /* dimensões */
-    width: 100%;
     min-height: 100vh;
 
     /* estilização */
@@ -18,13 +16,14 @@ body {
     padding: 24px;
 
     /* tipografia */
-    color: #191511;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #092838;
     text-align: center;
 }
 
-.container {
+main {
     /* dimensões */
-    width: min(92vw, 520px);
+    width: min(100%, 520px);
 
     /* estilização */
     background-color: #EAF5FF;
@@ -35,10 +34,6 @@ body {
     border-radius: 16px;
     padding: 32px 24px;
     gap: 14px;
-}
-
-h1 {
-    margin-bottom: 4px;
 }
 
 h2 {
@@ -69,14 +64,23 @@ ul {
     margin: 0;
 }
 
-input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
+form {
+    /* dimensões */
+    width: 100%;
+
+    /* estilização */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
 }
 
 label {
+    /* estilização */
+    margin-top: 8px;
+
     /* tipografia */
     font-weight: 600;
-    margin-top: 8px;
 }
 
 input {
@@ -92,6 +96,10 @@ input {
 
     /* tipografia */
     text-align: center;
+}
+
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
 }
 
 input:focus {
@@ -125,9 +133,9 @@ button:hover {
     min-height: 48px;
 
     /* estilização */
-    margin-top: 8px;
+    margin-top: 4px;
 
     /* tipografia */
     font-weight: 600;
-    color: #0D3A52;
+    color: #092838;
 }
